@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<style>
+.hex {
+        width: 400px;
+        height: 250px;
+        clip-path: polygon(0% 50%, 10% 60%, 90% 60%, 100% 50%, 90% 40%, 10% 40%);
+        background-color: blue;
+        margin-top: 20px; /* Adjust as needed */
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+    .shape-container{
+     display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh; /* You can adjust this to the desired height of the container */
+        margin-top: 100px; /* Adjust as needed */
+        margin-bottom: 100px; /* Adjust as needed */
+}
+
+</style>
+
+
+<div class="shape-container">
+    <div class="hex"></div>
+</div>
+
+
+<!--clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); makes a rectangle-->
+<!--unscaled retated hexagon  clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);-->
+<!--https://www.desmos.com/calculator/p8flfqvgar-->

@@ -1,0 +1,82 @@
+<style>
+
+  .container_faq{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+  .my_accordion {
+    background-color: #337ab7; /* Bootstrap primary color */
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.my_panel {
+    margin-bottom: 15px;
+    border: 1px solid #337ab7; /* Thin blue border */
+    border-radius: 4px;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel_head {
+    padding: 10px 15px;
+    background-color: white;
+    border-bottom: 1px solid white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+</style>
+
+
+
+<h4 class="house">CAREERHUB FAQ</h4>
+<div class="container_faq">
+  <div class="panel_head">
+    <button class="my_accordion">Can I move from one Career Stream to another?</button>
+
+    <div class="my_panel">
+        <p>Content</p>
+    </div>
+
+  </div>
+  </div>
+
+ <script>
+let my_acc = document.getElementsByClassName("my_accordion");
+
+for (let i = 0; i < my_acc.length; i++) {
+    my_acc[i].addEventListener("click", function () {
+        // Close all other accordion panels
+        for (let j = 0; j < my_acc.length; j++) {
+            if (j !== i) {
+                my_acc[j].classList.remove("active");
+                my_acc[j].nextElementSibling.style.display = "none";
+            }
+        }
+
+        // Toggle the clicked accordion panel
+        this.classList.toggle("active");
+
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "" || panel.style.display === "none") {
+            panel.style.display = "block";
+        } else {
+            panel.style.display = "none";
+        }
+    });
+}
+ </script>   

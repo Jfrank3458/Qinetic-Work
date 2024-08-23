@@ -1,0 +1,209 @@
+<!--I started it yay-->
+<div>
+  <p class="head">
+    <strong>Click the options below to learn more about the QinetiQ professional development opportunities.</strong>
+  </p>
+</div>
+
+<div class="container">
+  <div class="row Comm">
+    <p class="head">Community Upskilling</p>
+
+    <div class="col-md-3">
+      <img src="tm_involved_academy.jpg" style="max-width: 100%; max-height: 480px;">
+      <div class="trigger"></div>
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_cop.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_certification.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_toastmasters.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="click_area">
+      <div class="col-md-3">
+        <img src="tm_about_icon.jpg">
+        <p class="about"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_cadence_icon.jpg">
+        <p class="cadence"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_audience_icon.jpg">
+        <p class="audience"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row Lead">
+    <p class="head">Leadership and Professional Development</p>
+
+    <div class="col-md-3">
+      <img src="tm_involved_mentorship.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_QRS.jpg" style="max-width: 100%; max-height: 480px;"><!-- QinetiQ Rising Stars goes here-->
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_lead.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_executive_development.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="click_area">
+      <div class="col-md-3">
+        <img src="tm_about_icon.jpg">
+        <p class="about"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_cadence_icon.jpg">
+        <p class="cadence"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_audience_icon.jpg">
+        <p class="audience"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row Role">
+    <p class="head">Role Based Training</p>
+
+
+    <div class="col-md-3 Clickable">
+      <img src="tm_involved_career_champion.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_delivery_training.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_internship.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+
+    <div class="col-md-3">
+      <img src="tm_involved_compliance.jpg" style="max-width: 100%; max-height: 480px;">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="click_area">
+      <div class="col-md-3">
+        <img src="tm_about_icon.jpg">
+        <p class="about"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_cadence_icon.jpg">
+        <p class="cadence"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_audience_icon.jpg">
+        <p class="audience"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+<div class="row Self">
+  <p class="head">Self-Paced Learning Resources</p>
+  <div class="col-md-3">
+    <img src="tm_involved_learning.jpg" style="max-width: 100%; max-height: 480px;">
+  </div>
+
+  <div class="col-md-3">
+    <img src="tm_involved_associations.jpg" style="max-width: 100%; max-height: 480px;">
+  </div>
+
+  <div class="col-md-3">
+    <img src="tm_involved_podcast.jpg" style="max-width: 100%; max-height: 480px;">
+  </div>
+
+  <div class="col-md-3">
+    <img src="tm_involved_bd.jpg" style="max-width: 100%; max-height: 480px;">
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="click_area">
+      <div class="col-md-3">
+        <img src="tm_about_icon.jpg">
+        <p class="about"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_cadence_icon.jpg">
+        <p class="cadence"></p>
+      </div>
+      <div class="col-md-3">
+        <img src="tm_audience_icon.jpg">
+        <p class="audience"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  // Variable to keep track of the currently open trigger
+  let openTrigger = null;
+
+  // Add a click event listener to each <div class="col families">
+  $(".col.families").on("click", function () {
+    // Find the corresponding trigger div for the clicked families div
+    let triggerDiv = $(this).closest(".row").next(".trigger");
+
+    // Close the previously opened trigger
+    if (openTrigger && !openTrigger.is(triggerDiv)) {
+      openTrigger.fadeOut();
+    }
+
+    // Toggle the visibility of the trigger div
+    triggerDiv.fadeToggle();
+
+    // Update the currently open trigger
+    openTrigger = triggerDiv.is(":visible") ? triggerDiv : null;
+  });
+
+
+  let audience = ["Semester courses are available to all QinetiQ employees.", ""];
+  let cadence = [];
+  let about = [];
+  let udemy = [];
+
+
+</script>

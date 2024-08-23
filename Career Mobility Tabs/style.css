@@ -1,0 +1,504 @@
+body {
+  font-family: Arial;
+  
+}
+
+
+/*Competency Content*/
+/* Create three equal columns that sits next to each other */
+.row {
+  display: flex;
+
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+/* Style the tab container */
+.tab-container {
+  text-align: left;
+  position: relative;
+}
+
+/* Style the tab label */
+.tab-label {
+  border-radius:10px 10px 0 0; /*top-left, top-right, bottom-right, bottom-left */
+  background-color: #002744; 
+  color: white;
+  padding: 8px;
+  width: 48.5%; 
+  height:50px;
+  font-weight: bold;
+  position: relative;
+  top:  0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #22A1FF;
+  color: white;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #002744;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #002744;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Fade in tabs */
+.tabcontent {
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.panel-heading{ 
+background-color: #002744
+}
+
+
+
+/*Adds feeling of interactivity by changing header color
+ to gray on mouse hover*/
+.panel-heading:hover {
+  background-color: #22a1ff !important;
+}
+
+/*Prevents box from appearing around clicked panel title*/
+.panel-heading a {
+  display: block;
+  outline: none;
+  background-color: #002744
+}
+
+/*Spaces out Mandatory Yearly Training section, but on small
+*screens it may appear odd*/
+.training-section {
+  padding-left: 5em;
+}
+
+/*Center-align all Panel Titles to line up with headers*/
+.panel-title {
+  text-align: center;
+  background-color: #002744
+}
+
+/*Header styling for the four competency categories*/
+.house {
+  position: relative;
+  font-size: 20px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.house:before,
+.house:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: '\a0';
+  background-color: #9a258f;
+  /*line color*/
+}
+
+.house:before {
+  margin-left: -50%;
+  text-align: right;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Style the close button */
+.topright {
+  float: right !important;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {
+  color: red;
+}
+
+
+.col.families.active,
+.col.families:hover {
+  background-color: #004070;
+}
+
+
+/*Career Streams Stuff*/
+
+.purp {
+  background-color: #e4daee;
+  margin-top: 1px;
+  margin-bottom: 2px;
+
+}
+
+.purp p {
+  color: #0e2b72;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+ 
+
+.shape{
+background-color: #bfbebc;
+    margin-top: 10px;
+  margin-bottom: 1px;
+border-radius: 10px;
+}
+
+.shape p { 
+  color: #002c76;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+ 
+  
+}
+
+
+
+
+/* div "buttons" */
+/* Define a new class for the grid styling */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply the grid styles only to elements with the .grid-container class */
+.grid-container .row {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.col.head {
+  display: flex;
+  flex-direction: column;
+  /* Align items in a column */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  width: 15%;
+  max-width: 15%;
+  height: auto;
+  padding: 5px;
+  margin: 1px 2px 2px;
+  color: white;
+  background-color: #aeb2b2;
+  font-weight: bold;
+}
+
+
+.col.head_long {
+  display: flex;
+  flex-direction: column;
+  /* Align items in a column */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  width: 85%;
+  max-width: 85%;
+  height: auto;
+  padding: 5px;
+  margin: 1px 2px 2px;
+  color: white;
+  background-color: #aeb2b2;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.col.left {
+  width: 15%;
+  max-width: 200px;
+  height: auto;
+  padding: 10px;
+  margin: 1px 2px 2px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  /* Align items in a column */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+
+.col.left p{
+    display: flex;
+  flex-direction: column;
+  /* Align items in a column */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+margin: 0px 0px 2px;
+}
+
+
+.col.right {
+  width: 85%;
+  max-width: 85%;
+  height: auto;
+  padding: 5px;
+  margin: 1px 2px 2px;
+  overflow: auto;
+  word-wrap: break-word;
+  background-color: #efeff0;
+}
+
+
+
+
+
+
+.buttons .row .col {
+  width: 20%;
+  /* Adjust the width to elongate on the x-axis */
+  max-width: 200px;
+  /* Set a maximum width to prevent excessive elongation */
+  height: 25px;
+  /* Adjust the height to slenderize on the y-axis */
+  padding: 5px;
+  /* Padding can be adjusted if needed */
+  margin: 1px 2px 2px;
+    justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+
+
+@media (max-width: 600px) {
+  .buttons .row .col {
+    width: 100%;
+    /* Full width for smaller screens */
+    max-width: none;
+    /* Remove maximum width on smaller screens */
+    height: 40px;
+    /* Adjust height for smaller screens */
+  }
+}
+
+
+.container .row .col.job-level {
+  width: 15%;
+  max-width: 100px;
+  background-color: #565656;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+.container .row .col.num {
+  font-size: medium;
+  width: 15%;
+  max-width: 100px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  color: #0e2b72;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /*have a copy with flex, and a copy without(the one without should have the text-align) this one just has the flex*/
+}
+
+
+.container .row .col.emptyj {
+  width: 15%;
+  max-width: 100px;
+  background-color: transparent;
+  border: none;
+}
+
+.container .row .col.emptyc {
+  width: 20%;
+  max-width: 200px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.container .row .col.support {
+  background-color: #d3ecff;
+  color: #002744;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.container .row .col.professional {
+  background-color: #91d0ff;
+  color: white;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.container .row .col.technical {
+  background-color: #22a1ff;
+  color: white;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.container .row .col.management {
+  background-color: #0066b3;
+  color: white;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.container .row .col.executive {
+  background-color: #002744;
+  color: white;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.families {
+  cursor: pointer;
+  width: 15%;
+  max-width: 200px;
+  height: auto;
+  padding: 5px;
+  margin: 1px 2px 2px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  /* Align items in a column */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  background-color: #002744;
+  color: white;
+}
+
+/* Styling for subfamilies */
+.header {
+  width: 15%;
+  max-width: 200px;
+  height: auto;
+  padding: 5px;
+  margin: 1px 2px 2px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  /* Align items in a column */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  background-color: #9a258f;
+  color: white;
+  text-align: center;
+}
+
+.description {
+  width: 85%;
+  max-width: 85%;
+  height: auto;
+  padding: 5px;
+  margin: 1px 2px 2px;
+  overflow: auto;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  word-wrap: break-word;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.col.sub_des {
+  width: 85%;
+  max-width: 85%;
+  height: auto;
+  padding: 5px;
+  margin: 1px 2px 2px;
+  overflow: auto;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  word-wrap: break-word;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.champion{
+text-align: center;
+color: black;
+font-size: medium;
+}
+
+.career-head{
+background-color:#002744;
+color: white;
+text-align: center;
+}  
+
+.trigger {
+  display: none;
+}
